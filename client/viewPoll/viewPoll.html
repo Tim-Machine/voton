@@ -1,0 +1,16 @@
+<template name="viewPoll">
+    {{#if Template.subscriptionsReady}}
+    <h1>{{question}}</h1> {{#if needsToVote}}
+    <div id="vote" class="row">
+        <div class="col-lg-4">
+            <button id="green" class="btn btn-success btn-lg voteBtn"></button>
+        </div>
+        <div class="col-lg-4">
+            <button id="amber" class="btn btn-warning btn-lg voteBtn"></button>
+        </div>
+        <div class="col-lg-4">
+            <button id="red" class="btn btn-danger btn-lg voteBtn"></button>
+        </div>
+    </div>
+    {{/if}} {{> highchartsHelper chartId="test" chartWidth="100%" charHeight="100%" chartObject=topGenresChart}} {{/if}}
+</template>

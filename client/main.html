@@ -1,0 +1,32 @@
+<head>
+    <title>voton</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a id='logo' class="navbar-brand" href="#">voton</a>
+            </div>
+
+            <div class="navbar-right">
+                {{>createPoll}}
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        {{> views}}
+    </div>
+
+</body>
+
+
+
+<template name="hello">
+    <div id="name">
+        <h1> use the form in the nav bar to create a poll</h1>
+    </div>
+</template>
