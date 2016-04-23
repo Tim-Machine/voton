@@ -4,25 +4,25 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <a id='logo' class="navbar-brand" href="#">voton</a>
-            </div>
-
-            <div class="navbar-right">
-                {{>createPoll}}
-            </div>
+{{> sAlert}}
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a id='logo' class="navbar-brand" href="#">voton</a>
         </div>
 
-    </nav>
-
-    <div class="container">
-        {{> views}}
+        <div class="navbar-right">
+            {{>createPoll}}
+        </div>
     </div>
 
-</body>
+</nav>
 
+<div class="container">
+    {{> views}}
+</div>
+
+</body>
 
 
 <template name="hello">

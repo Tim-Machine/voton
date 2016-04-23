@@ -5,7 +5,6 @@ Template.views.helpers(
 {
     currentTemplate: function()
     {
-        console.log('fire')
         if (location.search)
         {
             var parsed = queryString.parse(location.search);
