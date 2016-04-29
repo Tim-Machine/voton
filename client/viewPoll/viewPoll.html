@@ -12,5 +12,7 @@
             <button id="red" class="btn btn-danger btn-lg voteBtn"></button>
         </div>
     </div>
-    {{/if}} {{> highchartsHelper chartId="test" chartWidth="100%" charHeight="100%" chartObject=topGenresChart}} {{/if}}
+        {{else}}
+        {{> highchartsHelper chartId="test" chartWidth="100%" charHeight="100%" chartObject=topGenresChart}} {{/if}}
+    {{/if}}
 </template>
