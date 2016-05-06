@@ -19,8 +19,8 @@ Template.viewPoll.events(
         "click #vote .btn": function (event, template) {
             data = {
                 voted: event.target.id,
-                userId: (Meteor.userId()) ? Meteor.userId() : window.localStorage.getItem('tempId')
-            }
+                userId: window.localStorage.getItem('tempId')
+            },
 
             Meteor.call("vote", pollId, data, function (error, result) {
                 if (error) {
