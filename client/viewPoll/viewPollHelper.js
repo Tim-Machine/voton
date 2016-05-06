@@ -45,7 +45,7 @@ Template.viewPoll.helpers(
         },
         needsToVote: function () {
 
-            var userId = (Meteor.userId()) ? Meteor.userId() : window.localStorage.getItem('tempId');
+            var userId =  window.localStorage.getItem('tempId');
 
             var poll = Polls.findOne();
             if (poll.votes == undefined) {
